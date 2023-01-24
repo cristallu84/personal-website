@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cristal's Website</title>
+        <link rel="icon" href="./images/moon.png" type="image/icon type">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    </head>    
+<body>
+    <header class="header">
+     <img src="images/moon.png" width="170px" height="auto" />
+     <h1>Hi! I'm Cristal Lu! </h1>
+     <p>welcome to my <Em>personal</Em> website!</p>
+        <div class="wrapper">
+            <div class="static-txt"> I'm a </div>
+            <ul class="dynamic-txts">
+                <li><span>CS student at Waterloo</span></li>
+                <li><span>business student at Laurier</span></li>
+                <li><span>small business owner</span></li>
+                <li><span>very fast learner</span></li>
+                <li><span>creative and innovative thinker</span></li>
+            </ul>
+        </div>
+    </header>
+
+    
+
+    <clickers id="clickers">
+        <a href="#about me">
+           <img src="./images/Aboutme.png" class="icon"/> 
+         </a>
+         <a href="#Projects">
+            <img src="images/Projects.png" class="icon"/>
+         </a>
+         <a href="#Hobbies">
+            <img src="images/Hobbies.png" class="icon"/>
+         </a>
+         <a href="#Contact">
+            <img src="images/Contact.png" class="icon"/>
+         </a>
+    </clickers>
+
+    <div id="about me">
+        <img src="./images/cris rest.jpeg" class="picofme" />
+     <h2>About Me</h2>
+     <p class="restrict-text">
+        Hey there! &#128075 My name is Cristal and I'm a first year Computer Science &#128187 and Business Administration &#128196 double degree 
+        student at the University of Waterloo and Wilfrid Laurier University. &#127891 
+        <br><br> I'm passionate about entrepreneurship, supporting non-profit organizations, and thinking of creative and innovative solutions to universal problems!
+        <br><br> In my spare time, I find joy in crocheting, baking, scrolling through pinterest, watching TV and picking up any new hobby that lets me be creative!
+        You can learn more about my hobbies <a href="#Hobbies">here.</a>
+       </p>
+       
+    </div>
+
+    <div id="Projects">
+        <h2>Projects</h2>
+        <a link href="https://github.com/cristallu84" target="_blank"><img src="./images/giticon.png" class="giticon" /></a>
+        <h3>SoundPicks</h3>
+        <p class="restrict-text">Currently in the planning stage of developing a Spotify-connected daily music recommendation app with my friends from high school!</p> 
+            
+        <h3>Personal website (this right here!)</h3>
+        <p class="restrict-text">
+            Made with HTML, CSS and Javascript, this is my first coding project outside of school!
+            I intend to continually improve it as I learn new skills. 
+        </p>
+        <h3> Python Game </h3>
+        <p class="restrict-text">
+            Made with Python, this was first ever coding project from high school. 
+            <br>It is an interactive game with a question/answer bank that collects points for multiple users.
+        </p>
+
+    </div>
+
+    <div id="Hobbies">
+        <h2>Hobbies</h2>
+        <div class="row">
+            <div class="column">
+                <h3>Travelling </h3>
+                <p class="hob-restrict-text">
+                This winter break, I went on my first no-parents-trip to Vancouver with some friends and it was an eye-opening experience! 
+                Next on my list are: South Korea, Taiwan and Singapore!
+                <br> <br>So far, the cities I've visited are: 
+                 <ul class="travel">
+                <li>Canada - Vancouver, Victoria</li>
+                <li>USA - Hawaii islands, Seattle, NYC, Chicago, Miami</li>
+                <li>UK - London, Bath</li>
+                <li>Spain - Barcelona</li>
+                <li>France - Nice</li>
+                <li>Italy - Rome, Florence, Sorrento </li>
+                <li>Japan - Tokyo, Osaka, Nara</li>
+                <li>China - Beijing, Tianjing</li>
+                </ul>
+                </p>
+            </div>
+            <div class="column">
+                <h3 id="coc"> Courtesy of Cris </h3>
+                <p class="hob-restrict-text" id="coc">
+                In high school, I ran a small business selling hand-made crocheted and embroidered goods and jewelry!
+                <br>Although school takes up most of my time, I'm always open to custom orders for friends!
+                <br><br> Check out my instagram <a link href="https://www.instagram.com/courtesyofcris/?hl=en">here.</a>
+            
+                </p>
+            </div>
+          </div>
+        
+    
+        <!--image slider-->
+        <div class="carousel">
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <!--slide images-->
+                <div class="slide first">
+                    <img src="./images/slide1.jpg" alt="vancouver">
+                </div>
+                <div class="slide">
+                    <img src="./images/slide2.jpeg" alt="book">
+                </div>
+                <div class="slide">
+                    <img src="./images/slide3.jpeg" alt="cake">
+                </div>
+                <div class="slide">
+                    <img src="./images/slide4.jpg" alt="crochet">
+                </div>
+                <div class="slide">
+                    <img src="./images/slide5.jpg" alt="embroidery">
+                </div>
+                <!--automatic navigation-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+            </div>
+            <!--manual navigation-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="Contact">
+        <h2>Contact</h2>
+        <p>Feel free to contact me to chat! &#9749 </p>
+        <clickers class="contact">
+            <a link href="https://www.linkedin.com/in/cristal-lu-82b0aa240/" target="_blank">
+                <img src="./images/linkedin.png" class="icon"/>
+             </a>
+             <a href="mailto:cristallu84@gmail.com">
+                <img src="images/email.png" class="icon"/>
+             </a>
+             <a link href="https://www.instagram.com/cristalluu/" target="_blank">
+                <img src="images/insta.png" class="icon"/>
+             </a>
+        </clickers>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
